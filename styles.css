@@ -4,11 +4,11 @@
   padding: 0;
   font-family: sans-serif;
 }
-header { background-color: black;
+header { background-color: #e7dbdb;
     color: white;
     padding: 0px;
     grid-area: header;
-    height: 20px;
+    height: 30px;
 
 }
 /*nav style*/
@@ -16,40 +16,46 @@ nav {
     background-color: #e7dbdb;
     ;
 }
-nav > ul > li {
+/*nav > ul > li {
     position: relative;
-  }
+   
+  }*/
 nav ul {
     list-style-type: none;
     display: grid;
     grid-template-columns: 20% 20% 20% 20% 20%;
-    text-align: right;
-   
+    text-align: center;
+    
   }
-  /* nav ul li a {
-    text-decoration: none;
-    color: black;
-    padding: 5px 20px;
-    border: 1px solid black;
-    background-color: white;
-    transition: 0.6s ease;
-  } */
-/*  
+
 nav ul li {
-    position: absolute;
-    display: block;
+    position: relative;
+    /* display: inline;
     background-color: #333;
     padding: 14px 16px;
     width: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in;
     text-align: center;
-    color: #ccc;
+    color: black; */
     
-}  */
+}  
+nav ul li a::after{
+  position: absolute;
+  background-color: black;
+  height: 50px;
+  width: 0;
+  counter: '';
+  top: -55px;
+  transform: translateX(-50%);
+  transition: 0.5s;
+
+}
 nav > ul > li:hover ul {
+ 
     opacity: 1;
     pointer-events: auto;
+    color: black;
 }
 /* body style*/
 body {
@@ -59,36 +65,38 @@ body {
    background-size: cover;
   }
   /* main style*/
-  main { background: color#212121;
-    color: white;
+  main { background-color: white;
+    color: black;
     grid-area: main;
     height: 1000px;
     text-align: center;
+    text-decoration: solid;
+    
+    
 
   }
-  .btn{
-    border: 1px solid black;
-    padding: 10px 30px;
-    color: black;
-    text-decoration: none;
-
+  /*cloudface style*/
+  .cloudface {
+    float: right;
+    height: 50px;
   }
   /*aside style*/
   aside { background-color: lightgreen;
     grid-area: aside;
+    height: 20px;
 
   }
   /*footer style*/
   footer { background-color: darkgreen;
     color: white;
     grid-area: footer;
+    
 
   }
-  .gallery {
-    border-radius: 5px;
-    background-color: transparent;
-    padding: 0px;
-  
+  /* social style */
+  .social {
+    color: blue;
+    
   }
 /*   
   /* bodystyle end */
@@ -122,27 +130,14 @@ body {
   }
   
   /* h1  style*/
-  /* h1 {
-    color: green;
-    background: fixed;
-    background-color: #111;
 
-  }
-  p {
-    color: black;
-  }
-  .container {
-    border-radius: 5px;
-    background-color: transparent;
-    padding: 20px;
-  }
   .row {
     display: flex;
     flex-wrap: wrap;
     padding: 0 4px;
   } */
   /* galery display style  style*/
-  /* .gallery {
+  .gallery {
     flex: 25%;
     max-width: 25%;
     padding: 0 4px;
@@ -152,9 +147,10 @@ body {
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+    
   }
   
-  @media screen and (max-width: 800px) {
+  /* @media screen and (max-width: 800px) {
     .gallery {
       flex: 50%;
       max-width: 50%;
@@ -165,8 +161,8 @@ body {
       flex: 100%;
       max-width: 100%;
     }
-  } */
-  /* contact input style
+  }  */
+contact input style
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
@@ -185,11 +181,12 @@ body {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    
   }
   
   input[type=submit]:hover {
-    background-color: #45a049;
+    background-color: black;
   }
-   */
+  
   /*contact input style end*/
   
